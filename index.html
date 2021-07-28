@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Projeto Slideshow</title>
+</head>
+<body>
+    
+    <header>
+      
+        <div class="menu" id="header">
+            <div class="image">
+                <img src="img/logo.jpg" alt="Logo JM Advogado">
+            </div>
+            <div class="menu-items">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Clientes</a></li>
+                    <li><a href="#">Áreas de atuação</a></li>
+                    <li><a href="#">Notícias</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#"><i class="fas fa-search"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="slider">
+            <div class="slider--controls">
+                <div class="slider--control" onclick="goPrev()"></div>
+                <div class="slider--control" onclick="goNext()"></div>
+            </div>
+            <div class="slider--width">
+                <div class="slider--item" style="background-image: url(img/banner1.jpg);"></div>
+                <div class="slider--item" style="background-image: url(img/banner2.jpg);"></div>
+                <div class="slider--item" style="background-image: url(img/banner3.jpg);"></div>
+            </div>
+        </div>
+
+        <section class="banner">
+            <h3>Advocacia Constante</h3>
+            <h1 id="writing">Especializado em 
+                <span class="txt-type" data-wait="3000" data-words='["Direito Civil", "Direito Trabalhista", 
+                "Direito Judicial", "Direto Administrativo", "Direito Empresarial"]'></span>
+            </h1>
+            <p>Uma estratégia bem sucedida desde o primeiro dia de consulta</p>
+            <img class="img2" src="img/OABPR.png" alt="">
+        </section>
+
+    </header>
+
+    <section class="sobre" id="sobre">
+        <div class="sobre-left">
+            <img src="img/joygler.jpg" alt="">
+        </div>
+        <div class="sobre-right">
+            <div class="border1"></div>
+            <div>
+                <h1>Sobre Joygler Makiyama</h1>
+                <p> Joygler Makiyama é formado bacharel em direito pela PUC-PR é tradicionalmente conhecida no ramo de advocacia empresarial, 
+                    consolidada há mais de trinta anos no mercado jurídico, atuando nas áreas de Direito Trabalhista, 
+                    Cível, Consumerista, Empresarial, Societário, Internacional, Mediação e Arbitragem, tanto na esfera 
+                    consultiva como contenciosa.
+                    Joygler Makiyama é formado bacharel em direito pela PUC-PR é tradicionalmente conhecida no ramo de advocacia empresarial, 
+                    consolidada há mais de trinta anos no mercado jurídico, atuando nas áreas de Direito Trabalhista, 
+                    Cível, Consumerista, Empresarial, Societário, Internacional, Mediação e Arbitragem, tanto na esfera 
+                    consultiva como contenciosa.
+                </p>
+                <button>Saiba mais</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="client">
+        <div  class="client-item"></div>
+            <h1 class="h1">Clientes</h1>
+        </div>
+        <div class="border2">
+
+        </div>
+        <main>
+            <div class="slide-container">
+                <img src="img/arrow-left.png" alt="left" id="slide-left" class="arrow">
+                <section class="container" id="slider2">
+                    <div class="thumbnail">
+                        <img src="img/cliente1.png" alt="1">
+                        <div class="product-details">
+                            <h2>Pizza Hut</h2>
+                        </div>
+                    </div>
+                    <div class="thumbnail">
+                        <img src="img/cliente2.png" alt="2">
+                        <div class="product-details">
+                            <h2>Pizza Domino</h2>
+                        </div>
+                    </div>
+                    <div class="thumbnail">
+                        <img src="img/cliente3.png" alt="3">
+                        <div class="product-details">
+                            <h2>Animal Planet</h2>
+                        </div>
+                    </div>
+                    <div class="thumbnail">
+                        <img src="img/cliente4.png" alt="4">
+                        <div class="product-details">
+                            <h2>Panda Express</h2>
+                        </div>
+                    </div>
+                    <div class="thumbnail">
+                        <img src="img/cliente5.png" alt="5">
+                        <div class="product-details">
+                            <h2>Starbucks</h2>
+                        </div>
+                    </div>
+                    <div class="thumbnail">
+                        <img src="img/cliente6.png" alt="6">
+                        <div class="product-details">
+                            <h2>Demo Product</h2>
+                        </div>
+                    </div>
+                    <div class="thumbnail">
+                        <img src="img/cliente7.png" alt="7">
+                        <div class="product-details">
+                            <h2>Apple</h2>
+                        </div>
+                    </div>
+                    <div class="thumbnail">
+                        <img src="img/cliente8.png" alt="8">
+                        <div class="product-details">
+                            <h2>Winkpedia</h2>
+                        </div>
+                    </div>
+                    <div class="thumbnail">
+                        <img src="img/cliente9.png" alt="9">
+                        <div class="product-details">
+                            <h2>Panda</h2>
+                        </div>
+                    </div>
+                </section>
+                <img src="img/arrow-right.png" alt="right" id="slide-right" class="arrow">
+            </div>
+        </main>
+    </section>
+    <section class="atuacao">
+        <div>
+            <h1  class="atuacao-h1">Áreas de Atuação</h1>
+        </div>
+        <div class="border3"></div>
+        <div class="atuacao-item">
+            <div class="atuacao-item-1">
+                <div class="atuacao-icone">
+                    <div ><i class="fas fa-users"></i></div>
+                    <div><h3>Direito Consumerista</h3></div>
+                    <div><p>Assessoramento da Administração Pública
+                            e empresas armazenadas em prestadores de serviços. 
+                            Atuação junto aos Tribunais de Contas estaduais e da União. 
+                            Assessoria quanto a licitações e contratos.
+                        </p>
+                        <a href="#">Saiba mais</a>
+                    </div>
+                </div>
+                <div class="atuacao-icone">
+                    <div><i class="fas fa-file-contract"></i></div>
+                    <div><h3>Direito Contratual</h3></div>
+                    <div><p>Assessoramento da Administração Pública
+                        e empresas armazenadas em prestadores de serviços. 
+                        Atuação junto aos Tribunais de Contas estaduais e da União. 
+                        Assessoria quanto a licitações e contratos.
+                    </p>
+                    <a href="#">Saiba mais</a>
+                </div>
+                </div>
+                <div class="atuacao-icone">
+                    <div ><i class="fas fa-user-friends"></i></div>
+                    <div><h3>Direito Societário</h3></div>
+                    <div><p>Assessoramento da Administração Pública
+                        e empresas armazenadas em prestadores de serviços. 
+                        Atuação junto aos Tribunais de Contas estaduais e da União. 
+                        Assessoria quanto a licitações e contratos.
+                    </p>
+                    <a href="#">Saiba mais</a>
+                </div>
+                </div>
+            </div>
+            <div class="atuacao-item-2">
+                <div class="atuacao-icone">
+                    <div><i class="fas fa-industry"></i></div>
+                    <div><h3>Direito Empresarial</h3></div>
+                    <div><p>Assessoramento da Administração Pública
+                        e empresas armazenadas em prestadores de serviços. 
+                        Atuação junto aos Tribunais de Contas estaduais e da União. 
+                        Assessoria quanto a licitações e contratos.
+                    </p>
+                    <a href="#">Saiba mais</a>
+                </div>
+                </div>
+                <div class="atuacao-icone">
+                    <div><i class="fas fa-pen-nib"></i></div>
+                    <div><h3>Arbitragem</h3></div>
+                    <div><p>Assessoramento da Administração Pública
+                        e empresas armazenadas em prestadores de serviços. 
+                        Atuação junto aos Tribunais de Contas estaduais e da União. 
+                        Assessoria quanto a licitações e contratos.
+                    </p>
+                    <a href="#">Saiba mais</a>
+                </div>
+                </div>
+                <div class="atuacao-icone">
+                    <div><i class="fas fa-globe"></i></div>
+                    <div><h3>Direito Internacional</h3></div>
+                    <div><p>Assessoramento da Administração Pública
+                        e empresas armazenadas em prestadores de serviços. 
+                        Atuação junto aos Tribunais de Contas estaduais e da União. 
+                        Assessoria quanto a licitações e contratos.
+                    </p>
+                    <a href="#">Saiba mais</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="news">
+        <div>
+            <h1 class="news-h1">Últimas Notícias</h1>
+            <div class="border4"></div>
+        </div>
+        <div class="news-item">
+            <div class="news-item-top">
+                <div class="news-item-top-left">
+                    <img src="img/news1.jpg" alt="news1">
+                    <h2>MS: Justiça do trabalho, entra em recesso na próxima segunda (20/12).</h2>
+                    <p>julho 25, 2021</p>
+                    <a href="#">Leia Mais</a>
+                </div>
+                <div class="news-item-top-right">
+                    <img src="img/news2.jpg" alt="news2">
+                    <h2>MS: Justiça do trabalho, entra em recesso na próxima segunda (20/12).</h2>
+                    <p>julho 25, 2021</p>
+                    <a href="#">Leia Mais</a>
+                </div>
+            </div>
+            <div class="news-item-bottom">
+                <div class="news-item-bottom-left">
+                    <img src="img/news3.jpg" alt="news3">
+                    <h3>MS: Justiça do trabalho, entra em recesso na próxima segunda (20/12).</h3>
+                    <p>julho 25, 2021</p>
+                    <a href="#">Leia Mais</a>
+                </div>
+                <div class="news-item-bottom-middle">
+                    <img src="img/news4.jpg" alt="news4">
+                    <h3>MS: Justiça do trabalho, entra em recesso na próxima segunda (20/12).</h3>
+                    <p>julho 25, 2021</p>
+                    <a href="#">Leia Mais</a>
+                </div>
+                <div class="news-item-bottom-right">
+                    <img src="img/news5.png" alt="news5">
+                    <h3>MS: Justiça do trabalho, entra em recesso na próxima segunda (20/12).</h3>
+                    <p>julho 25, 2021</p>
+                    <a href="#">Leia Mais</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    
+    <script type="text/javascript" src="script/script.js"></script>
+</body>
+</html>
